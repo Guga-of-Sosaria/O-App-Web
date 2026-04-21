@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O App Web</title>
+    <link rel="stylesheet" href="./Style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bem Vindo ao App Web</h1>
+
+        <section id="whenSignedOut">
+        <input type="email" id="email" placeholder="Email">
+        <input type="password" id="password" placeholder="Senha">
+        <button id="logInBtn">Fazer Login</button>
+        <button id="signInBtn">Criar conta</button>
+        <div id="authMessage" hidden="true"></div>
+
+    </section>
+
+    <section id="whenSignedIn" hidden="true">
+
+        <div id="userDetails"></div>
+
+        <div id="posts">
+            <h2>Postagens: </h2>
+        </div>
+
+        <div>
+            <p><label for="postForm">poste algo aqui!</label></p>
+            <textarea rows="5" cols="80" id="postForm" name="postForm"></textarea>
+            <br>
+            <button id="postar">Postar</button>
+
+        </div>
+
+        <button id="logOutBtnSignedIn">Sair</button>
+        <section id="adminStuff" hidden="true">
+            <button id="banUserButton">Banir usuário</button>
+            <button id="bannedUsersButton">Usuários banidos</button>
+            <div id="BanList" hidden="true">
+            </div>
+        </section>
+       
+    </section>
+    
+    <section id="whenBanned" hidden="true">
+        <h1>VOCÊ FOI BANIDO!</h1>
+        
+        <div class="ban-notification">
+            <p class="ban-notification-title">Motivo do Banimento:</p>
+            <p class="ban-notification-reason" id="banReason">Carregando...</p>
+        </div>
+            
+        <p>Não volte nunca mais!</p>
+        <button id="logOutBtnBanned">Sair</button>
+    </section>
+    </div>
+   
+</body>
+<script type="module" src="./index.js" defer></script>
+</html>
