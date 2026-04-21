@@ -5,8 +5,9 @@ Um app web com firebase integrado feito para uma atividade da matéria de modela
 firebase-rtdb
 ├── users
 │   └── {$uid}
-│       ├── name
+│       ├── username
 │       ├── email
+|		├── avatar
 │       ├── role
 |       └── user-posts
 |           └──{$pid}
