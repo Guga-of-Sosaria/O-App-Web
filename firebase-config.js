@@ -1,6 +1,6 @@
 // Your web app's Firebase configuration
 export const firebaseConfig = {
-  apiKey: "AIzaSyBtEGphu8EMZJqN9voxMjtw6_pPrF5F1h0",
+  apiKey: "api-key-goes-here",
   authDomain: "o-app-web.firebaseapp.com",
   databaseURL: "https://o-app-web-default-rtdb.firebaseio.com",
   projectId: "o-app-web",
